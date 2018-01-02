@@ -7,7 +7,7 @@ This is a minimal implementation of a trie in C++. It was created as an exercise
 
 ## Build instructions
 
-    g++ -std=c++11 -o prog main.cpp trie.cpp
-    ./prog
+    make
+    make example
 
-Running the code above inside the source directory will demonstrate the basic operations of the implemented trie.
+Running the code above inside the source directory will compile the program and demonstrate the basic operations of the implemented trie. The compile executable will be called `prog`.
