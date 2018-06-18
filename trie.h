@@ -7,11 +7,11 @@ const int ALPHABET_SIZE = 128; // assume ascii alphabet
 
 // trie node structure
 struct node {
-    std::shared_ptr<node> children[ALPHABET_SIZE];
+    node *children[ALPHABET_SIZE];
     bool end_of_word;
 };
 
-typedef std::shared_ptr<node> node_ptr; // node pointer type
+typedef node *node_ptr; // node pointer type
 
 node_ptr new_node(); // initalise new node
 void traverse_trie(node_ptr node, std::string str); // traverse tree depth and order first

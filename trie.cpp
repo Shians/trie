@@ -67,11 +67,14 @@ vector<string> Trie::stored_words() {
 
 // print all stored words with specified prefix
 vector<string> Trie::with_prefix(std::string str) {
+    vector<string> words;
     node_ptr node = root;
     for (char c : str) {
+        if (node->children[c] == nullptr) {
+            return words;
+        }
         node = node->children[c];
     }
-    vector<string> words;
     traverse_trie(node, str, words);
     return words;
 }

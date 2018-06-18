@@ -32,6 +32,11 @@ int main(int argc, char *argv[]) {
     print_string_vector(trie.with_prefix("he"));
     cout << "\n";
 
+    // print words containing prefix bleh
+    cout << "words beginning with bleh:" << "\n";
+    print_string_vector(trie.with_prefix("bleh"));
+    cout << "\n";
+
     // print all words
     cout << "all stored words:" << "\n";
     print_string_vector(trie.stored_words());

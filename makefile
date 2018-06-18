@@ -1,5 +1,5 @@
 CC := g++
-OPTS := -std=c++11
+OPTS := -std=c++11 -g
 
 .PHONY: example
 
